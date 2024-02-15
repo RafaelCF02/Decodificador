@@ -23,4 +23,7 @@ Este projeto é um decodificador desenvolvido como parte de um desafio proposto 
 
 ## Resultado
 
-- [Projeto Final](https://decodificador-iota.vercel.app/)
+- [Projeto final](https://rafaelcf02.github.io/Decodificador/)
+- [link alternativo](https://decodificador-iota.vercel.app/)
+
+#challengeonedecodificador5

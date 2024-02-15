@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-princiapl: #000000;
+    --cor-seundaria: #F6F6F6;
+    --cor-terciaria: #07b307ce;
+    --cor-backfround-output: #FFFFFF;
+
+    --font-princiapl: 'Krona One', sans-serif;
+    --font-segundaria: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-princiapl);
+    color: var(--cor-seundaria);
+}
+
+.conteudo {
+    padding: 2% 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.apresentacao__conteudo__texto{
+    width: 31.25rem;
+    height: 27.125rem;
+    font-size: 1.65rem;
+    padding: 0 25%;
+    color: var(--cor-terciaria);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    resize: none;
+    outline: 0;
+    text-transform: uppercase;
+    gap: 3rem;
+    font-family: var(--font-segundaria);
+}
+
+.apresentacao__conteudo__texto::placeholder {
+    color:var(--cor-terciaria)
+}
+
+.apresentacao__conteudo__aviso{
+    text-align: justify;
+}
+
+.conteudo__botao{
+    display: flex;
+    justify-content: center;  
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor-seundaria);
+    font-family: var(--font-segundaria);
+    justify-content: space-between;
+    align-items: center;
+    gap:16px;
+}
+
+.conteudo__botao__criptografar{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-seundaria);
+    text-align: center;
+    border: 2px solid var(--cor-princiapl);
+    border-radius: 16px;
+    font-family: var(--font-princiapl);
+    padding:6% 6%;
+}
+
+.conteudo__botao_descriptografar{
+    background-color: var(--cor-seundaria);
+    color: var(--cor-princiapl);
+    text-align: center;
+    border: 2px solid var(--cor-princiapl);
+    border-radius: 16px;
+    font-family: var(--font-princiapl);
+    padding:6% 6%;
+}
+
+.botao__copiar{
+    background-color: var(--cor-seundaria);
+    color: var(--cor-princiapl);
+    text-align: center;
+    border: 2px solid var(--cor-princiapl);
+    border-radius: 16px;
+    font-family: var(--font-princiapl);
+    padding:6% 6%;
+}
+
+.botao__copiar:hover{
+    background-color: var(--cor-princiapl);
+    color: var(--cor-seundaria);
+    border: 3px solid var(--cor-seundaria);
+}
+
+.conteudo__botao__criptografar:hover{
+    background-color: var(--cor-princiapl);
+    color: var(--cor-seundaria);
+    border: 3px solid var(--cor-seundaria);
+}
+
+.conteudo__botao_descriptografar:hover{
+    background-color: var(--cor-princiapl);
+    color: var(--cor-seundaria);
+    border: 3px solid var(--cor-seundaria);
+}
+
+.conteudo__output{
+    border: 3px solid var(--cor-terciaria);
+    border-radius: 16px;
+    gap: 16px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--cor-backfround-output);
+    color: var(--cor-princiapl);
+    width: 30%;
+    padding: 5% 2% 5% 3%;
+}
+
+.conteudo__output__texto{
+    font-size: 0.8rem;
+}
+
+.rodape{
+    color: var(--cor-terciaria);
+    text-align: center;
+    padding: 24px;
+    font-family: var(--font-segundaria);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+@media (max-width: 1200px){
+    
+    .cabecalho{
+        padding: 10%;
+        display: flex;
+        text-align: justify;
+    }
+
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .apresentacao__conteudo{
+        width: 100%;
+        align-items: center;
+    }
+    
+    .apresentacao__conteudo__texto{
+        text-align: center;
+    }
+
+    .conteudo__botao{
+        align-items: center;
+        justify-content: space-between;
+        padding: 2%;
+    }
+}

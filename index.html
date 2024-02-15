@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="shortcut icon" href="img/OIG3.png">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <img src="img/OIG3.png" alt="Logo Decodificador">
+        </header>
+        <main class="conteudo">
+            <section class="apresentacao__conteudo">
+                <textarea class="apresentacao__conteudo__texto" id="Input_texto" placeholder="Digite seu Texto"></textarea>
+                <p class="apresentacao__conteudo__aviso"><img src="img/bi_exclamation-circle-fill.png" alt="logo aviso">Apenas letras minusculas e sem acento!</p>
+                <div class="conteudo__botao">
+                    <button  onclick="criptografar()" class="conteudo__botao__criptografar">Criptografar</button>
+                    <button  onclick="descriptografar()" class="conteudo__botao_descriptografar">Descriptografar</button>
+                </div>
+            </section>
+            <div class="conteudo__output" id="output">
+                <img src="img/Highquality.jpg" alt="imagem output">
+                <h2 class="conteudo__output__titulo">Sua mensagem aparecera aqui</h2>
+                <textarea readonly class="output-texto"></textarea>
+                <p class="conteudo__output__texto">Digite um texto que deseja criptografar ou descriptografar.</p>
+            </div>
+        </main>
+        <footer class="rodape">  
+            <p>Desenvolvido por Rafael Costa</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>
